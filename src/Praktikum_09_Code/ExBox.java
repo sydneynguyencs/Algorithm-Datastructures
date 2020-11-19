@@ -1,8 +1,7 @@
-/**
+package Praktikum_09_Code; /**
  * @author K. Rege
  * @version 1.0 -- Experimentierkasten
  */
-package Praktikum_09_Code;
 
 import java.awt.*;
 import java.io.*;

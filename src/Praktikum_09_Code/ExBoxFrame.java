@@ -1,4 +1,4 @@
-/**
+package Praktikum_09_Code; /**
  * @(#)ExBoxFrame.java
  *
  * JFC ExBox application
@@ -11,13 +11,11 @@
  * @version	2d.02 2018/2/5 Reconnect (inspired by S. Kunz)
  */
 
-package Praktikum_09_Code;
-
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import org.junit.runner.JUnitCore;
@@ -265,7 +263,7 @@ public class ExBoxFrame extends JFrame implements ActionListener, ItemListener {
 		String name = openFileDialog(null, null);
 
 		BufferedReader br = new BufferedReader(
-				new InputStreamReader(new FileInputStream(name), "ISO-8859-1"));
+				new InputStreamReader(new FileInputStream(name), StandardCharsets.UTF_8));
 		StringBuffer b = new StringBuffer();
 		String line;
 		while ((line = br.readLine()) != null) {
